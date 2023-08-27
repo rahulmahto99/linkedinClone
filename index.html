@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin Clone</title>
+
+    <!-- Link start here  -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar start here  -->
+
+    <div class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"
+          ><img src="/Assets/logo.png" alt=""
+        /></a>
+        <div class="navbar-left-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="navbar-left-search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <div class="navbar-center-list">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="/Assets/home.png" alt="" /> <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/Assets/network.png" alt="" />
+                <span>My Network</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/Assets/jobs.png" alt="" /> <span>Jobs</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/Assets/message.png" alt="" /> <span>Messaging</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/Assets/notification.png" alt="" />
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/Assets/user-1.png"
+                  class="nav-profile-user"
+                  onclick="toggleMenu()"
+                  height="40px"
+              /></a>
+              <!-- Profile open section start here -->
+              <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                  <div class="user-info">
+                    <img src="/Assets/user-1.png" alt="" />
+                    <div class="biodata">
+                      <h1 class="user-tittle">Rahul Mahto</h1>
+                      <h5 class="bio">
+                        Frontend Developer| Html| Css | Javascript
+                      </h5>
+                    </div>
+                  </div>
+                  <a href="/Html/profile_page.html"
+                    ><button class="user-info-btn">View Profile</button></a
+                  >
+
+                  <hr />
+                  <div class="user-link">
+                    <h1>Account</h1>
+                    <a href="">Settings & Privacy</a>
+                    <a href="">Help </a>
+                    <a href="">Language </a>
+                  </div>
+                  <hr />
+                  <div class="user-link">
+                    <h1>Manage</h1>
+                    <a href="">Post & Activity</a>
+                    <a href="">Job Posting Account </a>
+                    <hr />
+                    <a href="">Sign out </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profile open section end here -->
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="horizontal-line" />
+      <div class="navbar-right">
+        <i class="fa-solid fa-grip"></i>
+        <p>For Business</p>
+      </div>
+      <div class="navbar-right">
+        <i class="fa-solid fa-briefcase"></i>
+        <p>Post a Job</p>
+      </div>
+    </div>
+
+    <!-- Navbar End here  -->
+
+    <!-- Main container start here  -->
+
+    <div class="container">
+      <!-- Left sidebar start here  -->
+      <div class="left-sidebar">
+        <div class="left-sidebar-profile">
+          <img src="/Assets/user-2.png" alt="" />
+          <h3 class="tittle">John karlena</h3>
+          <p class="about">
+            Frontend Developer | 𝗛𝘁𝗺𝗹 | Css | Javascript | ReactJS
+          </p>
+          <div class="profile-view-box">
+            <div class="profile-viewers">
+              <div class="profile-viewer-text">Profile Viewers</div>
+              <div class="count">124</div>
+            </div>
+            <div class="profile-viewers">
+              <div class="profile-viewer-text">Profile Impressions</div>
+              <div class="count">126,082</div>
+            </div>
+          </div>
+          <div class="bookmark">
+            <i class="fa-solid fa-bookmark"></i>
+            <div class="text">My Items</div>
+          </div>
+        </div>
+        <div class="left-sidebar-recent">
+          <h1>Recent</h1>
+          <div class="left-recent">
+            <div class="user-img"><img src="/Assets/user-5.png" alt="" /></div>
+            <div class="user-title">Frontend Web Developer Group</div>
+          </div>
+          <div class="left-recent">
+            <div class="user-img"><img src="/Assets/user-3.png" alt="" /></div>
+            <div class="user-title">Javascript Group</div>
+          </div>
+          <div class="left-recent">
+            <div class="user-img"><img src="/Assets/user-4.png" alt="" /></div>
+            <div class="user-title">Ui/ Ux Designer Group</div>
+          </div>
+          <div class="left-recent">
+            <div class="user-img"><img src="/Assets/user-1.png" alt="" /></div>
+            <div class="user-title">Fullstack Web Developer Group</div>
+          </div>
+          <div class="groups">
+            <h2>Groups</h2>
+            <div class="left-recent">
+              <div class="user-img">
+                <img src="/Assets/user-1.png" alt="" />
+              </div>
+              <div class="user-title">Fullstack Web Developer Group</div>
+            </div>
+            <div class="left-recent">
+              <div class="user-img">
+                <img src="/Assets/user-5.png" alt="" />
+              </div>
+              <div class="user-title">Html Developer Group</div>
+            </div>
+            <div class="left-recent">
+              <div class="user-img">
+                <img src="/Assets/user-3.png" alt="" />
+              </div>
+              <div class="user-title">Web Developer Group</div>
+            </div>
+            <br />
+            <h3>Show More <i class="fa-solid fa-chevron-down"></i></h3>
+
+            <h2>Followed Hastags</h2>
+            <h3 align="Center">Discover More</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left sidebar end here  -->
+
+      <!-- Main content start here  -->
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="/Assets/user-2.png" alt="" />
+            <textarea placeholder="Write A Post" rows="2"></textarea>
+          </div>
+          <div class="create-post-links">
+            <img src="/Assets/photo.png" alt="" />
+            <img src="/Assets/event.png" alt="" />
+            <img src="/Assets/video.png" alt="" />
+          </div>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort By: Top
+            <img src="/Assets/down-arrow.png" height="7px" alt="" />
+          </p>
+        </div>
+
+        <!-- First post start here -->
+
+        <div class="post">
+          <div class="post-author">
+            <img src="/Assets/user-3.png" alt="" />
+            <div>
+              <h1>Tania Dhar</h1>
+              <small>Frontend Developer</small><br />
+              <small>3 Hrs ago</small>
+            </div>
+          </div>
+          <div class="visible-post">
+            <p>
+              📢📢We are Conducting 𝐅𝐫𝐞𝐞 𝐋𝐞𝐚𝐧 𝐒𝐢𝐱 𝐒𝐢𝐠𝐦𝐚 𝐆𝐫𝐞𝐞𝐧 𝐁𝐞𝐥𝐭🤠 Training🏆
+              If you are interested, then Comment as "𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝗲𝗱" will share
+              more details and also a 💥special😍 gift 🎁 for you. or 𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫
+              𝐮𝐬𝐢𝐧𝐠 𝐛𝐞𝐥𝐨𝐰 𝐥𝐢𝐧k👇 We promise it will 𝗔𝗗𝗗 𝗚𝗥𝗘𝗔𝗧 𝗩𝗮𝗹𝘂𝗲🚀 to you!!!
+              P.S:- Don't miss this opportunity...🚀🚀
+            </p>
+            <img src="/Assets/post-image-1.png" width="100%" />
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="/Assets/like.png" alt="" />
+              <img src="/Assets/comment.png" alt="" />
+              <img src="/Assets/share.png" alt="" />
+              <img src="/Assets/send.png" alt="" />
+            </div>
+          </div>
+          <div class="create-post-input">
+            <img src="/Assets/user-2.png" alt="" />
+            <textarea placeholder="Write A Post" rows="2"></textarea>
+          </div>
+        </div>
+        <!-- Second post start here -->
+
+        <div class="post">
+          <div class="post-author">
+            <img src="/Assets/user-5.png" alt="" />
+            <div>
+              <h1>Abhishek</h1>
+              <small>Associate engineer</small><br />
+              <small>1 days ago</small>
+            </div>
+          </div>
+          <div class="visible-post">
+            <p>
+              Hello #everyone Completed TASK 03 as Web Development Intern Bharat
+              Intern TASK 03 : Homepage of Netflix IDE : VS Code Tech Stack :
+              HTML and CSS Github Link : https://lnkd.in/d6JNdVts
+            </p>
+            <img src="/Assets/post-image-3.png" width="100%" />
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="/Assets/like.png" alt="" />
+              <img src="/Assets/comment.png" alt="" />
+              <img src="/Assets/share.png" alt="" />
+              <img src="/Assets/send.png" alt="" />
+            </div>
+          </div>
+          <div class="create-post-input">
+            <img src="/Assets/user-2.png" alt="" />
+            <textarea placeholder="Write A Post" rows="2"></textarea>
+          </div>
+        </div>
+
+        <!-- Third post start here -->
+
+        <div class="post">
+          <div class="post-author">
+            <img src="/Assets/user-5.png" alt="" />
+            <div>
+              <h1>Mahto</h1>
+              <small> engineer</small><br />
+              <small>1 days ago</small>
+            </div>
+          </div>
+          <div class="visible-post">
+            <p>
+              👨‍💻 5 Common Freelancing Myths Debunked 👊 Myth 1 — There’s no job
+              security This is partially true. Let’s say you work for a single
+              <br />
+              <br />
+              company as an employee. If you lose your job, you lose all of your
+              income. But if you’re freelancing, the loss of a single client isb
+              <br />
+              <br />
+              generally only a percentage of your income. It might be a
+              significant percentage, but it’s not all of your income. On the
+              other side, if you have only 1 client then it's very risky as you
+              <br />
+              <br />
+              can lose all of your income. Myth 2 — Freelancing is more
+              stressful than a full-time job In the beginning, freelancing can
+              be more stressful from a financial perspective. When you have a
+              full-time job, you know that at the end of every week you’ll have
+              <br />
+              <br />
+              earned a certain amount of money. With freelancing, you only earn
+              when you have clients (who pay their bills). Myth 3 — You can work
+              whenever (and however) you want While freelancing gives you a lot
+              <br />
+              <br />
+              of flexibility in how and when you work, the idea that you just
+              work whenever you want or however you want is misleading. Certain
+              clients may require you to work in certain ways, or with certain
+              <br />
+              <br />
+              programs that fit into their established workflow. You’ll on any
+              projects you can get. There cing guides and web/blockchain
+              development ❤️ #freelancingtips #freelancinglife
+              #freelancingjourney #freelancedeveloper #developers #liweb3
+            </p>
+            <!-- <img src="/Assets/post-image-3.png" width="100%" /> -->
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="/Assets/like.png" alt="" />
+              <img src="/Assets/comment.png" alt="" />
+              <img src="/Assets/share.png" alt="" />
+              <img src="/Assets/send.png" alt="" />
+            </div>
+          </div>
+          <div class="create-post-input">
+            <img src="/Assets/user-2.png" alt="" />
+            <textarea placeholder="Write A Post" rows="2"></textarea>
+          </div>
+        </div>
+
+        <!-- Forth post start here  -->
+
+        <div class="post">
+          <div class="post-author">
+            <img src="/Assets/user-5.png" alt="" />
+            <div>
+              <h1>Market makes</h1>
+              <small>Market engineer</small><br />
+              <small>11 days ago</small>
+            </div>
+          </div>
+          <div class="visible-post">
+            <p>
+              Don’t be another NFT statistic and suffer a loss due to piracy,
+              fraud, or duplication
+            </p>
+
+            <img
+              src="MarketMaker_Campaign_1080X1080_V2_Dontgetduped_1080X1080jpg.jfif"
+              width="100%"
+            />
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="/Assets/like.png" alt="" />
+              <img src="/Assets/comment.png" alt="" />
+              <img src="/Assets/share.png" alt="" />
+              <img src="/Assets/send.png" alt="" />
+            </div>
+          </div>
+          <div class="create-post-input">
+            <img src="/Assets/user-2.png" alt="" />
+            <textarea placeholder="Write A Post" rows="2"></textarea>
+          </div>
+        </div>
+
+        <!-- Fifth Post start here  -->
+
+        <div class="post">
+          <div class="post-author">
+            <img src="/Assets/user-5.png" alt="" />
+            <div>
+              <h1>Delhi version</h1>
+              <small>Delgu viersion</small><br />
+              <small>1 days ago</small>
+            </div>
+          </div>
+          <div class="visible-post">
+            <p>
+              Come and discover our degrees, scholarships and what it’s like to
+              live and study in Canberra, Australia’s capital city.
+            </p>
+            <img src="/Assets/Delhi_VersionBjpg.jfif" width="100%" />
+          </div>
+          <div class="post-stats">
+            <div>
+              <img src="/Assets/like.png" alt="" />
+              <img src="/Assets/comment.png" alt="" />
+              <img src="/Assets/share.png" alt="" />
+              <img src="/Assets/send.png" alt="" />
+            </div>
+          </div>
+          <div class="create-post-input">
+            <img src="/Assets//Assets/Delhi_VersionBjpg.jfif" alt="" />
+            <textarea placeholder="Write A Post" rows="2"></textarea>
+          </div>
+        </div>
+        <a href="" class="load-more"
+          ><button class="loadmore">Load More</button></a
+        >
+      </div>
+
+      <!-- Main content end here  -->
+
+      <!-- Right sidebar start here  -->
+      <div class="right-sidebar">
+        <div class="right-first-box">
+          <div class="right-sidebar-box">
+            <div class="h1">Linkedin News</div>
+            <img src="/Assets/more.png" alt="" />
+          </div>
+
+          <div class="right-side-news">
+            <a href="">India makes historic Moon landing</a><br />
+            <span>1d ago &middot; 10,722 readers</span><br />
+          </div>
+          <div class="right-side-news">
+            <a href="">Festive season fuels hiring</a><br />
+            <span>1d ago &middot; 10,722 readers</span><br />
+          </div>
+
+          <div class="right-side-news">
+            <a href="">Harassment complaints rise at India Inc</a><br />
+            <span>1d ago &middot; 10,722 readers</span><br />
+          </div>
+          <div class="right-side-news">
+            <a href="">The case for corporate volunteering</a><br />
+            <span>1d ago &middot; 10,722 readers</span><br />
+          </div>
+
+          <div class="right-side-news">
+            <a href="">Cafes battle rising bean prices</a><br />
+            <span>1d ago &middot; 10,722 readers</span><br />
+          </div>
+
+          <h3>Show More <i class="fa-solid fa-chevron-down"></i></h3>
+        </div>
+        <div class="right-second-box">
+          <p>Mahto, Unlock your potential with Linkedin Premium</p>
+          <div class="right-image-box">
+            <img src="/Assets/user-3.png" alt="" />
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <a href=""
+            ><h1 class="right-image-box-head">
+              See who viewed your Profile in the last 90 days
+            </h1></a
+          >
+          <button class="right-paid-btn">Try For Free</button>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="">About</a>
+          <a href="">Accessibility</a>
+          <a href="">Help Center</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Advertising</a>
+          <a href="">Get the App</a>
+          <a href="">More</a>
+        </div>
+        <div class="copyright">
+          <img src="/Assets/logo.png" alt="" />
+          <p>Linkedin &#169; 2023. All Right Reserved</p>
+        </div>
+      </div>
+
+      <!-- Right sidebar end here  -->
+    </div>
+    <!-- Main container end here  -->
+
+    <!-- Script start here  -->
+    <script src="script.js"></script>
+  </body>
+</html>
